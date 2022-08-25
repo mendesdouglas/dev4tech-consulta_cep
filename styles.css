@@ -32,6 +32,7 @@ header{
     color: var(--light)
 }
 
+
 main{
     padding: 2rem 1rem;
     max-width: 400px;
@@ -54,16 +55,24 @@ input, button{
 .element{
     display: flex;
     align-items: center;
+    justify-content: space-around;
+    
+    flex-direction: row;
+    background: var(--darkest);
+}
 
+.element p{
+    font-size: 2rem;
 }
 .number{
     height: 1rem;
-    width: 2rem;
+    /* width: 2rem; */
     
 }
 .components{
     display: flex;
     flex-direction: column;
+    /* margin-left: 1rem; */
 }
 .cep-title{
     font-size: 2rem;
@@ -84,6 +93,11 @@ input, button{
 
 .information h1{
     color: var(--light)
+}
+.history-cep{
+    display:flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
 .information input{

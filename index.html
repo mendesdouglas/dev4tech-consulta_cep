@@ -16,15 +16,16 @@
                     <h1>Buscar cep</h1>
                     <div class="search-cep">
                         
-                        <input type="text" id="cep"/>
-                        <button onclick='search()'>Search</button>
+                        <input type="text" id="cep" class="cep"/>
+                        
                     </div>
                 </header>
                 <main>
                     <section class="history-cep">
                         
                         <div class="element">
-                            <div class="number">
+                            <h1>Sem histórico</h1>
+                            <!-- <div class="number">
                                 <h1>1</h1>
                             </div>
                             <div class="components">
@@ -34,7 +35,7 @@
                             <div class="buttons-cep">
                             <button>delete</button>
                             <button>ver</button>
-                            </div>
+                            </div> -->
                         </div>
                         
                     </section>
@@ -42,16 +43,13 @@
             </div>
             <div class="information">
                 <h1>INFORMATIONS</h1>
-                <!-- <input type="text" readonly id="bairro"/>
-                <input type="text" readonly id="cep"/>
-                <input type="text"readonly id="complemento"/>
-                <input type="text" readonly id="ddd"/>
-                <input type="text" readonly id="gia"/>
-                <input type="text" readonly id="ibge"/>
-                <input type="text" readonly id="localidade"/>
-                <input type="text" readonly id="logradouro"/>
-                <input type="text" readonly id="siafi"/>
-                <input type="text" readonly id="uf"/> -->
+                <!-- <h2> use a barra de busca para pesquisar um endereço</h2> -->
+                <input type="text" value="CEP" readonly id="cep"/>
+                <input type="text" value="Bairro" readonly id="bairro"/>
+                <input type="text" value="Complemento" readonly id="complemento"/>
+                <input type="text" value="Localidade" readonly id="localidade"/>
+                <input type="text" value="Logradouro" readonly id="logradouro"/>
+                <input type="text" value="UF" readonly id="uf"/>
             </div>
             
         </div>
