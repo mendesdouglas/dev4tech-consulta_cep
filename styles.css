@@ -80,7 +80,7 @@ input, button{
 
 .buttons-cep{
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
 }
 
 .information{

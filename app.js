@@ -47,7 +47,9 @@ const showResults = (data) => {
     
     
     history.push(data)
-    console.log(history)
+    //console.log(history)
+
+    
 
     info.innerHTML = `<h1>INFORMATIONS</h1>
                       <label> Bairro</label>
@@ -61,19 +63,22 @@ const showResults = (data) => {
 
     history_el.innerHTML = history.map(getElement)
     function getElement(item,index){
-                           return  [`<div class="element">
+        
+                           return  `<div class="element">
                                 <p>${index+1} </>
                                 <div class="components">
                                     <div class="cep-title">${item.cep}</div>
                                     <div class="cep-information">${item.localidade} - ${item.uf} </div>
                                 </div>
                                 <div class="buttons-cep">
-                                <button> delete </button>
-                                <button> ver </button>
+                                <button > X </button>
+                                <button id='ver+${index+1}' /> ver </button>
                                 </div>
-                            </div>`].join(" ")
+                            </div>`
     }
 }
+
+
 
 
 
