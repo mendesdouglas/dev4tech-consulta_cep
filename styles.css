@@ -1,0 +1,92 @@
+:root {
+    --dark: #374151;
+    --darker: #1F2937;
+    --darkest: #111827;
+    --gray: #6B7280;
+    --light: #EEE;
+    --pink: #EC4899;
+    --purple: #8B5Cf6;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+}
+
+body{
+    background-image: linear-gradient(to  right, var(--dark) 0%, var(--darker) 0%, var(--dark) 100%);
+}
+.container {
+    display: flex;
+}
+
+.column-search {
+    display: flex;
+    flex-direction: column;
+}
+
+header{
+    padding: 2rem 1rem;
+    max-width: 400px;
+    width: 100%;
+    color: var(--light)
+}
+
+main{
+    padding: 2rem 1rem;
+    max-width: 400px;
+    width: 100%;
+    color: var(--light)
+}
+input {
+    font-size: 2rem;
+    background: var(--gray) !important;
+    border-radius: 1rem;
+}
+input, button{
+    appearance: none;
+    border: none;
+    outline: none;
+    background: none;
+    color: var(--light);
+}
+
+.element{
+    display: flex;
+    align-items: center;
+
+}
+.number{
+    height: 1rem;
+    width: 2rem;
+    
+}
+.components{
+    display: flex;
+    flex-direction: column;
+}
+.cep-title{
+    font-size: 2rem;
+}
+
+.buttons-cep{
+    display: flex;
+    flex-direction: column;
+}
+
+.information{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1rem;
+    margin: 2rem auto;  
+}
+
+.information h1{
+    color: var(--light)
+}
+
+.information input{
+    margin: 0.5rem;
+}
+

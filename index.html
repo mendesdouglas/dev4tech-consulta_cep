@@ -4,15 +4,59 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link type="text/css" rel="stylesheet" href="styles.css">
     <title>Document</title>
 </head>
 <body>
     
-        <div>
-            <label for="cep">Cep</label>
-            <input type="text" id="cep"/>
+        <div class="container">
+            
+            <div class="column-search">
+                <header>
+                    <h1>Buscar cep</h1>
+                    <div class="search-cep">
+                        
+                        <input type="text" id="cep"/>
+                        <button onclick='search()'>Search</button>
+                    </div>
+                </header>
+                <main>
+                    <section class="history-cep">
+                        
+                        <div class="element">
+                            <div class="number">
+                                <h1>1</h1>
+                            </div>
+                            <div class="components">
+                                <div class="cep-title">85858-150</div>
+                                <div class="cep-information">Avenida Tal, Foz do iguaçu - Paraná </div>
+                            </div>
+                            <div class="buttons-cep">
+                            <button>delete</button>
+                            <button>ver</button>
+                            </div>
+                        </div>
+                        
+                    </section>
+                </main>
+            </div>
+            <div class="information">
+                <h1>INFORMATIONS</h1>
+                <!-- <input type="text" readonly id="bairro"/>
+                <input type="text" readonly id="cep"/>
+                <input type="text"readonly id="complemento"/>
+                <input type="text" readonly id="ddd"/>
+                <input type="text" readonly id="gia"/>
+                <input type="text" readonly id="ibge"/>
+                <input type="text" readonly id="localidade"/>
+                <input type="text" readonly id="logradouro"/>
+                <input type="text" readonly id="siafi"/>
+                <input type="text" readonly id="uf"/> -->
+            </div>
+            
         </div>
-        <button onclick='search()'>Consultar</button>
+
+        
     
 
     <script src="app.js"></script>
